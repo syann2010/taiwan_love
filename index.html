@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>♪ ﾀｲﾜﾝらぶ日記 ♪ 〜管理人の部屋〜</title>
+<style>
+  body {
+    background-color: #000033;
+    color: #ccff00;
+    font-size: 13px;
+    line-height: 1.2;
+    background-image: radial-gradient(#111 10%, transparent 10%);
+    background-size: 20px 20px;
+  }
+ 
+  .main {
+    width: 600px;
+    margin-left: 20px;
+    border: 1px dashed #fff;
+    padding: 10px;
+    background-color: rgba(0,0,51,0.8);
+  }
+
+  .title-area {
+    border-bottom: 5px double #ff00ff;
+    margin-bottom: 20px;
+  }
+
+  a:link { color: #ffffff; }
+  a:visited { color: #888888; }
+  a:hover { background: #fff; color: #000; }
+
+  .nikki-date {
+    background: #555;
+    color: #fff;
+    padding: 2px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .nikki-body {
+    padding: 10px 0 40px 0;
+  }
+
+  .spot-title {
+    color: #00ffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .bbs-input {
+    background: #000;
+    color: #00ff00;
+    border: 1px solid #fff;
+  }
+
+  .blink { animation: bl 1s step-end infinite; }
+  @keyframes bl { 50% { opacity: 0; } }
+
+  #cnt {
+    color: red;
+    font-size: 24px;
+    font-family: "Courier New", monospace;
+    background: #000;
+    padding: 0 5px;
+    border: 1px inset #888;
+  }
+</style>
+<script>
+  window.onload = function() {
+    let count = localStorage.getItem('taiwan_cnt');
+    if (!count) { count = 1234; }
+    count = parseInt(count) + 1;
+    localStorage.setItem('taiwan_cnt', count);
+    document.getElementById('cnt').innerText = count.toString().padStart(6, '0');
+    if (count % 100 === 0) {
+      alert("ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!\n\n貴方は " + count + " 番目の訪問者です！\nキリ番報告 BBSに書いてね！！");
+    }
+  };
+
+  function kakinoki() {
+    var n = document.f.n.value;
+    var m = document.f.m.value;
+    if(n=="" || m==""){ alert("いれてね☆"); return; }
+    var list = document.getElementById('list');
+    list.innerHTML = "名前："+n+"<br>「"+m+"」<br>----------------<br>" + list.innerHTML;
+    document.f.m.value = "";
+    alert("ｻﾝｸｽ！！");
+  }
+</script>
+</head>
+<body>
+
+<div class="main">
+  <div class="title-area">
+    <font size="7" color="#00ffff"><b>★ 台湾 <span class="blink">LOVE</span> 日記 ★</b></font><br>
+    <font size="2">〜管理人の独り言。誹謗中傷はお断り〜</font>
+  </div>
+
+  <p>あなたは <span id="cnt">000000</span> 人目のお客様（´∀｀）</p>
+ 
+  <marquee scrollamount="2" width="300">。。。ゆっくりしていってね。。。キリ番踏み逃げ禁止。。。</marquee>
+
+  <br><br>
+
+  <div class="nikki-date">2025/12/18(木)</div>
+  <div class="nikki-body">
+    <span class="spot-title">●台北101に行ってきたヨ！</span><br>
+    台湾来たらココ行かなきゃ始まらないっしょ！！<br>
+    <b>台北101</b>ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!<br>
+    近くで見たらマジでデカすぎｗｗｗ首が痛くなるレベル（笑）<br>
+    <br>
+    エレベーターが異常な速さで上がってって超ビビった（汗）<br>
+    耳がキーンってなる前に着いた件についてｗｗｗ<br>
+    展望台から見た台北の街がミニチュアみたいで神！！<br>
+    夜景もヤバいらしいから、夜に来るのが正解っぽい。<br>
+    <br>
+    有名な<font color="red"><b>金色のクソデカい玉（ダンパー）</b></font>も見てきた！<br>
+    正直仕組みはよく分からんが、とにかくデカいｗ<br>
+    台湾の技術力すげーなって思った（小並感）
+    <br><br>
+
+    <span class="spot-title">●華山1914文化創意産業園区</span><br>
+    ここ元は酒造工場だったらしい。<br>
+    今はオシャレスポットになってて、雑貨屋とかカフェが大量発生。<br>
+    レンガ造りの建物が並んでて、雰囲気良すぎ問題。<br>
+    <br>
+    意味不明なアート展示とかもあって、<br>
+    「これは芸術…なのか？」って首かしげた（笑）<br>
+    でも歩いてるだけで楽しいからヨシ！<br>
+    リア充多めだったけど気にしない方向でｗ
+    <br><br>
+
+    <span class="spot-title">●北投公園＆台北市立図書館</span><br>
+    電車降りた瞬間から温泉の匂いしてｷﾀｺﾚ!!ってなった。<br>
+    北投公園は緑多くて、時間ゆっくり流れてる感じ。<br>
+    <br>
+    公園の中にある台北市立図書館が反則レベルでカッコいい！！<br>
+    <font color="#00ff00"><b>木でできた巨大な船</b></font>みたいな見た目でテンション上がる。<br>
+    中も静かで、勉強してる人多くて尊敬した。<br>
+    <br>
+    こんな図書館が近所にあったら毎日通うわ…。<br>
+    将来ここらへん住みたい（本気）
+  </div>
+
+  <div class="nikki-date">2025/12/17(水)</div>
+  <div class="nikki-body">
+    昨日は夜市で<font color="red"><b>胡椒餅</b></font>を調子乗って3個食べた。<br>
+    ↓<br>
+    結果<br>
+    ↓<br>
+    腹　壊　し　た＼(^o^)／<br>
+    <br>
+    完全に自業自得ｗｗｗ<br>
+    みんなも食べ過ぎには注意な！！
+  </div>
+
+  <hr>
+
+  <h2>■ 掲示板（足跡帳）</h2>
+  <div style="border: 1px solid #fff; padding: 5px;">
+    <form name="f">
+      名前：<input type="text" name="n" class="bbs-input" size="10"><br>
+      内容：<input type="text" name="m" class="bbs-input" size="40">
+      <input type="button" value="書く" onclick="kakinoki()">
+    </form>
+    <br>
+    <div id="list" style="font-size:12px;">
+      名前：名無しさん<br>
+      「台北101のエレベーター速すぎじゃね？」<br>
+      ----------------<br>
+      名前：管理人<br>
+      「↑ガチで一瞬ｗ耳注意な！」<br>
+      ----------------<br>
+    </div>
+  </div>
+
+  <br>
+
+  <center>
+    <a href="#">[TOP]</a> <a href="#">[PROFILE]</a> <a href="#">[LINK]</a><br><br>
+    <font size="1">
+    (c)2025 台湾LOVE管理人 <br>
+    IE以外での表示は保証しません！！
+    </font>
+  </center>
+  <font size="1">
+    ※このページは個人制作のサンプルです。<br>
+    ※実在の人物・団体とは関係ありません。
+  </font>
+
+</div>
+
+</body>
+</html>
